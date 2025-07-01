@@ -30,7 +30,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Kubernetes
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 alias kctx='kubectx'
-alias kns='kns'
+alias kns='kubens'
 KUBE_PS1_ENABLED=off
 
 # AWS
