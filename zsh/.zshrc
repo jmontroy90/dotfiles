@@ -19,10 +19,11 @@ alias enterdocker='docker run -it --rm --privileged --pid=host justincormack/nse
 # Not using GPG Suite, so we for some reason need to set the GPG TTY.
 export GPG_TTY=$(tty)
 
-# Path modifications 
+# PATH + CDPATH modifications
 export PATH="$(go env GOPATH)/bin:$PATH" 								# go
 export PATH="$PATH:$HOME/.lmstudio/bin" 							# lmstudio
 export PATH="${PATH}:$HOME/.ghcup/bin" 							# haskell
+export CDPATH=.:~:..:~/code/git
 
 # syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
